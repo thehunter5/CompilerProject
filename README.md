@@ -1,6 +1,5 @@
 # Compiler-Construction
 
-
 This repository contains code for a compiler of a custom language. The different modules of the compiler implemented are: 
 
 1. Lexer
@@ -8,6 +7,8 @@ This repository contains code for a compiler of a custom language. The different
 3. Abstract Syntax Tree Generator
 4. Typechecker and Semantic Analyser
 5. Code Generator
+
+**Please switch to the semantics branch to run the compiler upto the semantic analyser phase. The changes will be merged to master after completing the code generator**
 
 ## Input
 The driver function can be found in `driver.c`. It expects a code.txt file, a grammar.txt file and which modules to run as command line arguments. The grammar is expected to be LL(1) compatible. Alternatively, a makefile is also present in which the default target runs all modules together. A `code.asm` file is generated which can be run using NASM-64. 
