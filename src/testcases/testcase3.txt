@@ -1,0 +1,45 @@
+_computeFunctionValue input parameter list[real c7, real c4, real c5]
+output parameter list [real c6];
+	record #finance
+		type int: value;
+		type real:rate;
+		type int: interest;
+	endrecord;
+	record #fina
+		type int: value;
+		type real:rate;
+		type int: interest;
+	endrecord;
+	type real : d4cbcd5677;
+	type real : c4bbb;
+	c6 <--- c4+c5;
+
+	if((~(c4bbb == 0)) &&& (c4bbb > 78.56))
+	then
+		c6<--- d4cbcd5677/c4bbb;
+	endif
+
+	return [c6];
+end
+
+
+%The following program computes the function value for the user defined input
+_main
+	record #fin
+		type int: value;
+		type real:rate;
+		type int: interest;
+	endrecord;
+
+	type int : b5;
+	type int : d5cb34567;
+	type int :  b3b444 : global;
+	type real: c3;
+	b5 <--- 1.12;
+	read(d5cb34567);
+	read(b3b444);
+
+	[c3] <--- call _computeFunctionValue with parameters [b5, d5cb34567, b3b444];
+	write(c3);
+	return;
+end

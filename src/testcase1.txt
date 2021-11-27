@@ -1,0 +1,6 @@
+_main
+	type int: b3;
+	type int: b2;
+	b2 <--- b3;
+	return;
+end
